@@ -307,15 +307,19 @@ a {
   gap: 1.5rem;
 }
 
+.projects-grid {
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+}
+
 .project-card {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 1rem;
   padding: 1.75rem;
   border: 1px solid var(--border);
   border-radius: 14px;
   background-color: var(--card);
-  transition: all 0.25s ease;
+  transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .project-card:hover {
@@ -328,9 +332,8 @@ a {
   font-size: 1.25rem;
 }
 
-.project-card > p {
+.project-description {
   color: var(--text-muted);
-  flex-grow: 1;
 }
 
 .project-tech {
@@ -348,11 +351,50 @@ a {
   color: var(--accent);
 }
 
+.project-design {
+  padding: 1rem 1.1rem;
+  border-radius: 10px;
+  background-color: var(--bg-soft);
+  border: 1px solid var(--border);
+}
+
+.project-design-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.6rem;
+}
+
+.project-design-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.project-design-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.project-design-list svg {
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+  fill: var(--accent);
+}
+
 .project-links {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   padding-top: 0.5rem;
+  margin-top: auto;
   border-top: 1px solid var(--border);
 }
 
