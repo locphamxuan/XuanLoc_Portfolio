@@ -14,9 +14,6 @@ export const NavBar = () => {
   return (
     <nav className={scrolled ? "navbar scrolled" : "navbar"}>
       <div className="container navbar-inner">
-        <a href="#home" className="navbar-logo">
-          XL<span className="dot">.</span>
-        </a>
         <div className="navbar-links">
           <a href="#home">Home</a>
           <a href="#skills">Skills</a>

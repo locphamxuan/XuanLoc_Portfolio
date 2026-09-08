@@ -114,17 +114,6 @@ a {
   gap: 1.5rem;
 }
 
-.navbar-logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--text);
-  letter-spacing: 0.05em;
-}
-
-.navbar-logo .dot {
-  color: var(--accent);
-}
-
 .navbar-links {
   display: flex;
   gap: 2rem;
